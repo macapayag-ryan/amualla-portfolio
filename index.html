@@ -1,0 +1,1894 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Jaspher Amualla — BS Information Technology</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        (function () {
+            try {
+                var t = localStorage.getItem('rm-theme');
+                if (t === 'light') document.documentElement.setAttribute('data-theme', 'light');
+            } catch (e) { }
+        })();
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ============ HEADER ============ -->
+    <header>
+        <nav class="nav">
+            <a href="#home" class="brand">
+                <span class="brand-mark">JA</span>
+                Jaspher Amualla
+            </a>
+
+            <div class="nav-links" id="navLinks">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#education">Education</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#references">References</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="nav-right">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark and light mode">
+                    <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                    </svg>
+
+                    <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round">
+                        <circle cx="12" cy="12" r="4" />
+                        <path
+                            d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l-1.41 1.41M17.66 6.34l1.41-1.41" />
+                    </svg>
+                </button>
+
+                <a href="#contact" class="nav-cta">Let's talk</a>
+
+                <button class="burger" id="burgerBtn" aria-label="Toggle menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+
+        <div class="mobile-panel" id="mobilePanel">
+            <div class="mobile-panel-inner">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#education">Education</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#references">References</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+        <div class="glow">
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="wrap hero-grid">
+
+            <div>
+                <span class="avail-pill">
+                    <span class="pulse-dot"></span>
+                    Open to OJT Opportunities
+                </span>
+
+                <h1>
+                    Jaspher <span class="accent-text">Amualla</span>
+                </h1>
+
+                <span class="role">
+                    BS Information Technology Student | OJT Applicant
+                </span>
+
+                <p class="intro">
+                    I am an aspiring BS Information Technology student seeking an
+                    On-the-Job Training opportunity. I want to apply my IT knowledge
+                    and skills in a professional work environment, learn new
+                    technologies, improve my abilities, and contribute to the
+                    organization.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">
+                        View my projects
+                    </a>
+
+                    <a href="#contact" class="btn btn-outline">
+                        Get in touch
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="hero-visual">
+
+                <div class="avatar-wrap">
+                    <div class="avatar-ring"></div>
+
+                    <div class="avatar-frame">
+                        <img id="profileImg" src="profile.jpg" alt="Jaspher Amualla"
+                            onerror="this.style.display='none'; document.getElementById('avatarFallback').style.display='flex';">
+
+                        <div class="avatar-fallback" id="avatarFallback">
+                            JA
+                        </div>
+                    </div>
+                </div>
+
+                <div class="terminal-card">
+                    <div class="terminal-bar">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <p>jaspher@portfolio</p>
+                    </div>
+
+                    <div class="terminal-body">
+
+                        <p>
+                            <span class="prompt">$</span>whoami
+                        </p>
+
+                        <p id="typeLine"></p>
+
+                        <p>
+                            <span class="prompt">$</span>
+                            <span class="cursor">▍</span>
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============ ABOUT ============ -->
+    <section class="about" id="about">
+
+        <div class="glow">
+            <span style="width:400px;height:400px;background:var(--accent-2);top:10%;right:-140px;"></span>
+        </div>
+
+        <div class="wrap about-grid">
+
+            <div class="about-copy reveal left">
+
+                <span class="kicker">About me</span>
+
+                <h2>
+                    Ready to learn, grow, and contribute in the IT field.
+                </h2>
+
+                <p>
+                    I'm a BS Information Technology student at PHINMA University of
+                    Iloilo with knowledge in web development, databases, networking,
+                    troubleshooting, and data management.
+                </p>
+
+                <p>
+                    I'm looking for an OJT opportunity where I can apply my IT
+                    knowledge and skills, learn new technologies, improve my
+                    abilities, work well with others, and gain valuable industry
+                    experience.
+                </p>
+
+                <div class="focus-tags">
+
+                    <span class="focus-tag">
+                        💻 Web Development
+                    </span>
+
+                    <span class="focus-tag">
+                        🗄️ MySQL
+                    </span>
+
+                    <span class="focus-tag">
+                        🌐 Networking
+                    </span>
+
+                    <span class="focus-tag">
+                        🔧 Troubleshooting
+                    </span>
+
+                    <span class="focus-tag">
+                        🔐 Cybersecurity
+                    </span>
+
+                    <span class="focus-tag">
+                        📚 Continuous Learning
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="reveal right">
+
+                <div class="stack-panel">
+
+                    <div class="panel-head">
+                        <span class="dot r"></span>
+                        <span class="dot y"></span>
+                        <span class="dot g"></span>
+                        <span class="panel-title">
+                            skills.json
+                        </span>
+                    </div>
+
+                    <div class="panel-body">
+
+                        <div class="stack-row">
+                            <span class="key">
+                                web_development
+                            </span>
+
+                            <span class="val">
+                                "HTML / CSS"
+                            </span>
+                        </div>
+
+                        <div class="stack-row">
+                            <span class="key">
+                                javascript
+                            </span>
+
+                            <span class="val">
+                                "Basic"
+                            </span>
+                        </div>
+
+                        <div class="stack-row">
+                            <span class="key">
+                                database
+                            </span>
+
+                            <span class="val">
+                                "PHP / MySQL"
+                            </span>
+                        </div>
+
+                        <div class="stack-row">
+                            <span class="key">
+                                python
+                            </span>
+
+                            <span class="val">
+                                "Basic"
+                            </span>
+                        </div>
+
+                        <div class="stack-row">
+                            <span class="key">
+                                networking
+                            </span>
+
+                            <span class="val">
+                                "Basic"
+                            </span>
+                        </div>
+
+                        <div class="stack-row">
+                            <span class="key">
+                                status
+                            </span>
+
+                            <span class="val">
+                                "OJT Applicant"
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills">
+
+        <div class="wrap">
+
+            <div class="section-head reveal up">
+
+                <span class="kicker">
+                    Skills
+                </span>
+
+                <h2>
+                    What I bring to a team
+                </h2>
+
+                <p>
+                    Skills developed through coursework, academic projects,
+                    training, and hands-on practice.
+                </p>
+
+            </div>
+
+
+            <div class="skills-grid">
+
+                <!-- Technical Skills -->
+                <div class="skill-card reveal up">
+
+                    <h3>
+
+                        <span class="skill-icon">
+
+                            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+
+                                <path
+                                    d="M8 3H5a2 2 0 0 0-2 2v3m0 8v3a2 2 0 0 0 2 2h3m8-18h3a2 2 0 0 1 2 2v3m0 8v3a2 2 0 0 1-2 2h-3" />
+
+                            </svg>
+
+                        </span>
+
+                        Technical Skills
+
+                    </h3>
+
+                    <div class="skill-list">
+
+                        <div class="skill-row">
+                            HTML / CSS
+                        </div>
+
+                        <div class="skill-row">
+                            Basic JavaScript
+                        </div>
+
+                        <div class="skill-row">
+                            Basic PHP
+                        </div>
+
+                        <div class="skill-row">
+                            Basic Python
+                        </div>
+
+                        <div class="skill-row">
+                            MySQL
+                        </div>
+
+                        <div class="skill-row">
+                            Basic Networking
+                        </div>
+
+                        <div class="skill-row">
+                            Basic Electronic Repair
+                        </div>
+
+                        <div class="skill-row">
+                            Troubleshooting
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Tools -->
+                <div class="skill-card reveal up" style="transition-delay:.08s">
+
+                    <h3>
+
+                        <span class="skill-icon">
+
+                            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+
+                                <circle cx="12" cy="12" r="3" />
+
+                                <path
+                                    d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z" />
+
+                            </svg>
+
+                        </span>
+
+                        Tools
+
+                    </h3>
+
+                    <div class="skill-list">
+
+                        <div class="skill-row">
+                            Microsoft Word
+                        </div>
+
+                        <div class="skill-row">
+                            Microsoft Excel
+                        </div>
+
+                        <div class="skill-row">
+                            Microsoft PowerPoint
+                        </div>
+
+                        <div class="skill-row">
+                            Google Workspace
+                        </div>
+
+                        <div class="skill-row">
+                            Canva
+                        </div>
+
+                        <div class="skill-row">
+                            Visual Studio Code
+                        </div>
+
+                        <div class="skill-row">
+                            GitHub
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Professional Skills -->
+                <div class="skill-card reveal up" style="transition-delay:.16s">
+
+                    <h3>
+
+                        <span class="skill-icon">
+
+                            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+
+                                <circle cx="9" cy="7" r="4" />
+
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+
+                            </svg>
+
+                        </span>
+
+                        Professional Skills
+
+                    </h3>
+
+                    <div class="skill-list">
+
+                        <div class="skill-row">
+                            Communication
+                        </div>
+
+                        <div class="skill-row">
+                            Teamwork
+                        </div>
+
+                        <div class="skill-row">
+                            Problem-solving
+                        </div>
+
+                        <div class="skill-row">
+                            Time Management
+                        </div>
+
+                        <div class="skill-row">
+                            Adaptability
+                        </div>
+
+                        <div class="skill-row">
+                            Willingness to Learn
+                        </div>
+
+                        <div class="skill-row">
+                            Attention to Detail
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============ EDUCATION ============ -->
+    <section class="education" id="education">
+
+        <div class="wrap">
+
+            <div class="section-head reveal up">
+
+                <span class="kicker">
+                    Education
+                </span>
+
+                <h2>
+                    Academic background
+                </h2>
+
+            </div>
+
+
+            <div class="edu-card reveal scale">
+
+                <span class="edu-icon">
+
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+
+                        <path d="M22 10L12 5 2 10l10 5 10-5z" />
+
+                        <path d="M6 12v5c0 1.66 2.69 3 6 3s6-1.34 6-3v-5" />
+
+                    </svg>
+
+                </span>
+
+                <div>
+
+                    <h3>
+                        Bachelor of Science in Information Technology
+                    </h3>
+
+                    <div class="school">
+                        PHINMA University of Iloilo
+                    </div>
+
+                    <span class="dates">
+                        2022 — Present · Expected Graduation: 2027
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="edu-card reveal scale" style="margin-top:16px;">
+
+                <span class="edu-icon">
+
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+
+                        <path d="M4 4h16v16H4z" />
+
+                        <path d="M8 8h8M8 12h8M8 16h5" />
+
+                    </svg>
+
+                </span>
+
+                <div>
+
+                    <h3>
+                        Senior High School
+                    </h3>
+
+                    <div class="school">
+                        Adriano Cabardo National Highschool
+                    </div>
+
+                    <span class="dates">
+                        2020 — 2022
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="edu-card reveal scale" style="margin-top:16px;">
+
+                <span class="edu-icon">
+
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+
+                        <path d="M4 5h16v14H4z" />
+
+                        <path d="M8 9h8M8 13h8M8 17h5" />
+
+                    </svg>
+
+                </span>
+
+                <div>
+
+                    <h3>
+                        Elementary
+                    </h3>
+
+                    <div class="school">
+                        Cabacanan Proper Elementary School
+                    </div>
+
+                    <span class="dates">
+                        Elementary
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ============ SEMINARS ============ -->
+    <section class="education" id="experience">
+
+        <div class="wrap">
+
+            <div class="section-head reveal up">
+
+                <span class="kicker">
+                    Seminars / Trainings
+                </span>
+
+                <h2>
+                    Continuous learning
+                </h2>
+
+                <p>
+                    Training and seminars that support my IT and professional development.
+                </p>
+
+            </div>
+
+
+            <div class="edu-card reveal scale">
+
+                <span class="edu-icon">
+
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+
+                        <path d="M4 4h16v16H4z" />
+
+                        <path d="M8 8h8M8 12h8M8 16h5" />
+
+                    </svg>
+
+                </span>
+
+                <div>
+
+                    <h3>
+                        Basic Web Development Training
+                    </h3>
+
+                    <div class="school">
+                        2026
+                    </div>
+
+                    <span class="dates">
+                        Training
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="edu-card reveal scale" style="margin-top:16px;">
+
+                <span class="edu-icon">
+
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+
+                        <path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z" />
+
+                    </svg>
+
+                </span>
+
+                <div>
+
+                    <h3>
+                        Introduction to Cybersecurity
+                    </h3>
+
+                    <div class="school">
+                        2026
+                    </div>
+
+                    <span class="dates">
+                        Training
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="edu-card reveal scale" style="margin-top:16px;">
+
+                <span class="edu-icon">
+
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+
+                        <path d="M4 5h16v14H4z" />
+
+                        <path d="M8 9h8M8 13h8M8 17h5" />
+
+                    </svg>
+
+                </span>
+
+                <div>
+
+                    <h3>
+                        Microsoft Excel Fundamentals
+                    </h3>
+
+                    <div class="school">
+                        2025
+                    </div>
+
+                    <span class="dates">
+                        Training
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="edu-card reveal scale" style="margin-top:16px;">
+
+                <span class="edu-icon">
+
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+
+                        <circle cx="12" cy="8" r="4" />
+
+                        <path d="M4 21c1-4 4-6 8-6s7 2 8 6" />
+
+                    </svg>
+
+                </span>
+
+                <div>
+
+                    <h3>
+                        Student Leadership and Professional Development Seminar
+                    </h3>
+
+                    <div class="school">
+                        2025
+                    </div>
+
+                    <span class="dates">
+                        Seminar
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects">
+
+        <div class="glow">
+
+            <span style="width:440px;height:440px;background:var(--accent);top:0;left:-160px;"></span>
+
+        </div>
+
+        <div class="wrap">
+
+            <div class="projects-head-row reveal up">
+
+                <div class="section-head" style="margin-bottom:0;">
+
+                    <span class="kicker">
+                        Projects
+                    </span>
+
+                    <h2>
+                        Things I've built
+                    </h2>
+
+                    <p>
+                        Academic project focused on building a secure web-based
+                        healthcare and appointment management system.
+                    </p>
+
+                </div>
+
+
+                <div class="carousel-controls">
+
+                    <button class="car-btn" id="prevBtn" aria-label="Previous project">
+
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+
+                            <path d="M15 18l-6-6 6-6" />
+
+                        </svg>
+
+                    </button>
+
+
+                    <button class="car-btn" id="nextBtn" aria-label="Next project">
+
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+
+                            <path d="M9 18l6-6-6-6" />
+
+                        </svg>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="carousel reveal scale" id="carousel" tabindex="0" aria-roledescription="carousel"
+                aria-label="Projects">
+
+                <div class="carousel-track" id="carouselTrack">
+
+                    <div class="project-slide">
+
+                        <div class="project-card">
+
+                            <div class="project-media">
+
+                                <span class="project-tag-top">
+
+                                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+
+                                        <path d="M3 21h18M5 21V7l7-4 7 4v14M9 9h1m4 0h1m-6 4h1m4 0h1m-6 4h1m4 0h1" />
+
+                                    </svg>
+
+                                    Web System
+
+                                </span>
+
+
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3">
+
+                                    <rect x="3" y="4" width="18" height="16" rx="2" />
+
+                                    <path d="M7 8h10M7 12h10M7 16h6" />
+
+                                </svg>
+
+                            </div>
+
+
+                            <div class="project-body">
+
+                                <h3>
+                                    JelanMed: Secure Clinical Appointment System
+                                </h3>
+
+                                <p class="desc">
+                                    A secure web-based system developed for Jelan
+                                    Pharmacy & Medical Laboratory Services to manage
+                                    patient appointments, clinical and laboratory
+                                    services, and patient records. The system includes
+                                    multi-layered authentication and data encryption
+                                    to help protect sensitive patient information.
+                                </p>
+
+
+                                <div class="tech-tags">
+
+                                    <span class="tech-tag">
+                                        Web Development
+                                    </span>
+
+                                    <span class="tech-tag">
+                                        Database
+                                    </span>
+
+                                    <span class="tech-tag">
+                                        Security
+                                    </span>
+
+                                    <span class="tech-tag">
+                                        Authentication
+                                    </span>
+
+                                    <span class="tech-tag">
+                                        Data Encryption
+                                    </span>
+
+                                </div>
+
+
+                                <div class="project-actions">
+
+                                    <a href="#" class="btn-sm filled">
+                                        Academic Project
+                                    </a>
+
+                                    <a href="https://github.com/jaspher" target="_blank" rel="noopener" class="btn-sm">
+                                        GitHub
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="carousel-dots" id="carouselDots">
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ============ REFERENCES ============ -->
+    <section class="education" id="references">
+
+        <div class="wrap">
+
+            <div class="section-head reveal up">
+
+                <span class="kicker">
+                    References
+                </span>
+
+                <h2>
+                    Academic references
+                </h2>
+
+                <p>
+                    Professional and academic contacts listed on my resume.
+                </p>
+
+            </div>
+
+
+            <div class="edu-card reveal scale">
+
+                <span class="edu-icon">
+
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+
+                        <circle cx="12" cy="8" r="4" />
+
+                        <path d="M4 21c1-4 4-6 8-6s7 2 8 6" />
+
+                    </svg>
+
+                </span>
+
+                <div>
+
+                    <h3>
+                        Ms. Jocel C. Gallo, MBA
+                    </h3>
+
+                    <div class="school">
+                        Teacher, CITE
+                    </div>
+
+                    <span class="dates">
+                        09673060018
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="edu-card reveal scale" style="margin-top:16px;">
+
+                <span class="edu-icon">
+
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+
+                        <path d="M22 10L12 5 2 10l10 5 10-5z" />
+
+                        <path d="M6 12v5c0 1.66 2.69 3 6 3s6-1.34 6-3v-5" />
+
+                    </svg>
+
+                </span>
+
+                <div>
+
+                    <h3>
+                        Dean Seth DA. Nono, MSCS
+                    </h3>
+
+                    <div class="school">
+                        Dean, CITE
+                    </div>
+
+                    <span class="dates">
+                        09190028340
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact" id="contact">
+
+        <div class="wrap contact-grid">
+
+            <div class="reveal left">
+
+                <span class="kicker">
+                    Contact
+                </span>
+
+                <h2 style="margin-top:12px; font-size:clamp(1.8rem,3vw,2.4rem);">
+                    Let's connect
+                </h2>
+
+                <p style="margin-top:16px; color:var(--text-soft); font-size:1.02rem;">
+                    Feel free to reach out regarding an OJT opportunity,
+                    internship, or IT-related collaboration.
+                </p>
+
+
+                <div class="contact-list">
+
+                    <!-- Email -->
+                    <div class="contact-item">
+
+                        <span class="ic">
+
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+
+                                <path d="M22 6l-10 7L2 6" />
+
+                                <path d="M2 6h20v12H2z" />
+
+                            </svg>
+
+                        </span>
+
+
+                        <div>
+
+                            <div class="lbl">
+                                Email
+                            </div>
+
+                            <div class="val">
+
+                                <a href="mailto:kylejaspher@gmail.com">
+                                    kylejaspher@gmail.com
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Phone -->
+                    <div class="contact-item">
+
+                        <span class="ic">
+
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2
+                                    19.79 19.79 0 0 1-8.63-3.07
+                                    19.5 19.5 0 0 1-6-6
+                                    19.79 19.79 0 0 1-3.07-8.67
+                                    A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72
+                                    c.127.96.362 1.903.7 2.81
+                                    a2 2 0 0 1-.45 2.11L8.09 9.91
+                                    a16 16 0 0 0 6 6l1.27-1.27
+                                    a2 2 0 0 1 2.11-.45
+                                    c.907.338 1.85.573 2.81.7
+                                    A2 2 0 0 1 22 16.92z" />
+
+                            </svg>
+
+                        </span>
+
+
+                        <div>
+
+                            <div class="lbl">
+                                Phone
+                            </div>
+
+                            <div class="val">
+
+                                <a href="tel:+639283553732">
+                                    0928-355-3732
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Location -->
+                    <div class="contact-item">
+
+                        <span class="ic">
+
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+
+                                <circle cx="12" cy="10" r="3" />
+
+                            </svg>
+
+                        </span>
+
+
+                        <div>
+
+                            <div class="lbl">
+                                Location
+                            </div>
+
+                            <div class="val">
+                                Iloilo City, Philippines
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- GitHub -->
+                    <div class="contact-item">
+
+                        <span class="ic">
+
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87
+                                    a3.37 3.37 0 0 0-.94-2.61
+                                    c3.14-.35 6.44-1.54 6.44-7
+                                    A5.44 5.44 0 0 0 20 4.77
+                                    5.07 5.07 0 0 0 19.91 1
+                                    S18.73.65 16 2.48
+                                    a13.38 13.38 0 0 0-7 0
+                                    C6.27.65 5.09 1 5.09 1
+                                    A5.07 5.07 0 0 0 5 4.77
+                                    a5.44 5.44 0 0 0-1.5 3.78
+                                    c0 5.42 3.3 6.61 6.44 7
+                                    A3.37 3.37 0 0 0 9 18.13V22" />
+
+                            </svg>
+
+                        </span>
+
+
+                        <div>
+
+                            <div class="lbl">
+                                GitHub
+                            </div>
+
+                            <div class="val">
+
+                                <a href="https://github.com/jaspher" target="_blank" rel="noopener">
+
+                                    github.com/jaspher
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Contact Form -->
+            <form id="contactForm" class="reveal right">
+
+                <div class="field">
+
+                    <label for="name">
+                        Name
+                    </label>
+
+                    <input id="name" name="name" type="text" placeholder="Your full name" required>
+
+                </div>
+
+
+                <div class="field">
+
+                    <label for="email">
+                        Email
+                    </label>
+
+                    <input id="email" name="email" type="email" placeholder="you@email.com" required>
+
+                </div>
+
+
+                <div class="field">
+
+                    <label for="message">
+                        Message
+                    </label>
+
+                    <textarea id="message" name="message" placeholder="What would you like to say?" required></textarea>
+
+                </div>
+
+
+                <button type="submit" class="send-btn">
+
+                    Send message
+
+                </button>
+
+
+                <p class="form-note" id="formNote">
+
+                    This contact form is currently a demo.
+                    Connect it to an email service or backend to receive messages.
+
+                </p>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- ============ FOOTER ============ -->
+    <footer>
+
+        <div class="wrap">
+
+            <div class="foot-left">
+
+                <span class="brand-mark">
+                    JA
+                </span>
+
+                <div>
+
+                    <div class="foot-brand-text">
+                        Jaspher Amualla
+                    </div>
+
+                    <div class="foot-role">
+                        BS Information Technology Student | OJT Applicant
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="foot-links">
+
+                <a href="https://github.com/jaspher" target="_blank" rel="noopener">
+
+                    GitHub
+
+                </a>
+
+                <a href="mailto:kylejaspher@gmail.com">
+                    Email
+                </a>
+
+            </div>
+
+
+            <div class="foot-copy">
+
+                &copy;
+
+                <span id="year"></span>
+
+                Jaspher Amualla.
+                All rights reserved.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ============ BACK TO TOP ============ -->
+    <button class="top-btn" id="topBtn" aria-label="Back to top">
+
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+
+            <path d="M18 15l-6-6-6 6" />
+
+        </svg>
+
+    </button>
+
+
+    <!-- ============ JAVASCRIPT ============ -->
+    <script>
+
+        (function () {
+
+            "use strict";
+
+
+            var reduceMotion =
+                window.matchMedia &&
+                window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+
+            /* ---------- YEAR ---------- */
+
+            document.getElementById('year').textContent =
+                new Date().getFullYear();
+
+
+            /* ---------- THEME TOGGLE ---------- */
+
+            var themeToggle =
+                document.getElementById('themeToggle');
+
+
+            themeToggle.addEventListener('click', function () {
+
+                var root =
+                    document.documentElement;
+
+                var isLight =
+                    root.getAttribute('data-theme') === 'light';
+
+
+                if (isLight) {
+
+                    root.removeAttribute('data-theme');
+
+                } else {
+
+                    root.setAttribute('data-theme', 'light');
+
+                }
+
+
+                try {
+
+                    localStorage.setItem(
+                        'rm-theme',
+                        isLight ? 'dark' : 'light'
+                    );
+
+                } catch (e) { }
+
+            });
+
+
+            /* ---------- MOBILE NAV ---------- */
+
+            var burger =
+                document.getElementById('burgerBtn');
+
+            var panel =
+                document.getElementById('mobilePanel');
+
+
+            burger.addEventListener('click', function () {
+
+                var open =
+                    panel.classList.toggle('show');
+
+                burger.classList.toggle(
+                    'open',
+                    open
+                );
+
+                burger.setAttribute(
+                    'aria-expanded',
+                    open
+                );
+
+            });
+
+
+            panel.querySelectorAll('a').forEach(function (a) {
+
+                a.addEventListener('click', function () {
+
+                    panel.classList.remove('show');
+
+                    burger.classList.remove('open');
+
+                    burger.setAttribute(
+                        'aria-expanded',
+                        false
+                    );
+
+                });
+
+            });
+
+
+            /* ---------- ACTIVE NAV LINK ---------- */
+
+            var sections =
+                Array.prototype.slice.call(
+                    document.querySelectorAll('section[id]')
+                );
+
+
+            var navAnchors =
+                document.querySelectorAll(
+                    '.nav-links a'
+                );
+
+
+            function setActiveLink() {
+
+                var scrollPos =
+                    window.scrollY + 140;
+
+
+                var current =
+                    sections[0] &&
+                    sections[0].id;
+
+
+                sections.forEach(function (sec) {
+
+                    if (scrollPos >= sec.offsetTop) {
+
+                        current =
+                            sec.id;
+
+                    }
+
+                });
+
+
+                navAnchors.forEach(function (a) {
+
+                    a.classList.toggle(
+                        'active',
+                        a.getAttribute('href') === '#' + current
+                    );
+
+                });
+
+            }
+
+
+            window.addEventListener(
+                'scroll',
+                setActiveLink,
+                { passive: true }
+            );
+
+
+            setActiveLink();
+
+
+            /* ---------- SCROLL REVEAL ---------- */
+
+            var revealEls =
+                document.querySelectorAll('.reveal');
+
+
+            if (reduceMotion) {
+
+                revealEls.forEach(function (el) {
+
+                    el.classList.add('in');
+
+                });
+
+            } else {
+
+                var io =
+                    new IntersectionObserver(
+                        function (entries) {
+
+                            entries.forEach(
+                                function (entry) {
+
+                                    if (entry.isIntersecting) {
+
+                                        entry.target.classList.add('in');
+
+                                        io.unobserve(
+                                            entry.target
+                                        );
+
+                                    }
+
+                                }
+                            );
+
+                        },
+                        {
+                            threshold: 0.15
+                        }
+                    );
+
+
+                revealEls.forEach(function (el) {
+
+                    io.observe(el);
+
+                });
+
+            }
+
+
+            /* ---------- BACK TO TOP ---------- */
+
+            var topBtn =
+                document.getElementById('topBtn');
+
+
+            window.addEventListener(
+                'scroll',
+                function () {
+
+                    topBtn.classList.toggle(
+                        'show',
+                        window.scrollY > 480
+                    );
+
+                },
+                { passive: true }
+            );
+
+
+            topBtn.addEventListener(
+                'click',
+                function () {
+
+                    window.scrollTo({
+
+                        top: 0,
+
+                        behavior:
+                            reduceMotion
+                                ? 'auto'
+                                : 'smooth'
+
+                    });
+
+                }
+            );
+
+
+            /* ---------- TERMINAL TYPING EFFECT ---------- */
+
+            var typeLine =
+                document.getElementById('typeLine');
+
+
+            var fullText =
+                "BSIT student · OJT applicant · IT learner";
+
+
+            if (reduceMotion) {
+
+                typeLine.textContent =
+                    fullText;
+
+            } else {
+
+                var i = 0;
+
+
+                (function type() {
+
+                    if (i <= fullText.length) {
+
+                        typeLine.textContent =
+                            fullText.slice(0, i);
+
+                        i++;
+
+
+                        setTimeout(
+                            type,
+                            42
+                        );
+
+                    }
+
+                })();
+
+            }
+
+
+            /* ---------- CONTACT FORM ---------- */
+
+            var form =
+                document.getElementById('contactForm');
+
+            var note =
+                document.getElementById('formNote');
+
+
+            form.addEventListener(
+                'submit',
+                function (e) {
+
+                    e.preventDefault();
+
+
+                    note.textContent =
+                        "Thanks! This is a demo form — connect it to an email service or backend to actually receive messages.";
+
+
+                    note.style.color =
+                        'var(--ok)';
+
+
+                    form.reset();
+
+                }
+            );
+
+
+            /* ---------- PROJECT CAROUSEL ---------- */
+
+            var track =
+                document.getElementById('carouselTrack');
+
+
+            var slides =
+                Array.prototype.slice.call(
+                    track.children
+                );
+
+
+            var dotsWrap =
+                document.getElementById('carouselDots');
+
+
+            var prevBtn =
+                document.getElementById('prevBtn');
+
+
+            var nextBtn =
+                document.getElementById('nextBtn');
+
+
+            var current = 0;
+
+
+            slides.forEach(
+                function (_, idx) {
+
+                    var dot =
+                        document.createElement('button');
+
+
+                    dot.className =
+                        'car-dot' +
+                        (
+                            idx === 0
+                                ? ' active'
+                                : ''
+                        );
+
+
+                    dot.setAttribute(
+                        'aria-label',
+                        'Go to project ' +
+                        (idx + 1)
+                    );
+
+
+                    dot.addEventListener(
+                        'click',
+                        function () {
+
+                            goTo(idx);
+
+                        }
+                    );
+
+
+                    dotsWrap.appendChild(dot);
+
+                }
+            );
+
+
+            var dots =
+                Array.prototype.slice.call(
+                    dotsWrap.children
+                );
+
+
+            function goTo(idx) {
+
+                current =
+                    (idx + slides.length) %
+                    slides.length;
+
+
+                track.style.transform =
+                    'translateX(-' +
+                    (current * 100) +
+                    '%)';
+
+
+                dots.forEach(
+                    function (d, i) {
+
+                        d.classList.toggle(
+                            'active',
+                            i === current
+                        );
+
+                    }
+                );
+
+            }
+
+
+            prevBtn.addEventListener(
+                'click',
+                function () {
+
+                    goTo(current - 1);
+
+                }
+            );
+
+
+            nextBtn.addEventListener(
+                'click',
+                function () {
+
+                    goTo(current + 1);
+
+                }
+            );
+
+
+            var carousel =
+                document.getElementById('carousel');
+
+
+            carousel.addEventListener(
+                'keydown',
+                function (e) {
+
+                    if (e.key === 'ArrowLeft') {
+
+                        goTo(current - 1);
+
+                    }
+
+
+                    if (e.key === 'ArrowRight') {
+
+                        goTo(current + 1);
+
+                    }
+
+                }
+            );
+
+
+            /* ---------- TOUCH SWIPE ---------- */
+
+            var startX = null;
+
+
+            carousel.addEventListener(
+                'pointerdown',
+                function (e) {
+
+                    startX =
+                        e.clientX;
+
+                }
+            );
+
+
+            carousel.addEventListener(
+                'pointerup',
+                function (e) {
+
+                    if (startX === null)
+                        return;
+
+
+                    var diff =
+                        e.clientX - startX;
+
+
+                    if (Math.abs(diff) > 50) {
+
+                        diff < 0
+                            ? goTo(current + 1)
+                            : goTo(current - 1);
+
+                    }
+
+
+                    startX = null;
+
+                }
+            );
+
+
+            window.addEventListener(
+                'resize',
+                function () {
+
+                    goTo(current);
+
+                }
+            );
+
+        })();
+
+    </script>
+
+</body>
+
+</html>
